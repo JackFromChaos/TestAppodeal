@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
@@ -178,6 +179,12 @@ namespace AppodealAds.Unity.Dummy
         {
             Debug.Log("Call to Appodeal.getSegmentId on not supported platform. To test advertising, install your application on the Android/iOS device.");
             return -1;
+        }
+        
+        public DateTime getBuildDate()
+        {
+            Debug.Log("Call to Appodeal.getBuildDate on not supported platform. To test advertising, install your application on the Android/iOS device.");
+            return DateTime.MinValue;
         }
 
         public bool canShow(int adTypes)

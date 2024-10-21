@@ -103,6 +103,14 @@ namespace AppodealAds.Unity.Android
             getAppodealClass().CallStatic("initialize", getActivity(), appKey, nativeAdTypesForType(adTypes), new AppodealInitializationCallback(listener));
         }
 
+        public DateTime getBuildDate()
+        {
+            AndroidJavaObject dateObject = getAppodealClass().CallStatic<AndroidJavaObject>("getBuildDate");
+            long timeInMillis = dateObject.Call<long>("getTime");
+            DateTime buildDate = new DateTime(1970, 1, 1).AddMilliseconds(timeInMillis);
+            return buildDate;
+        }        
+        
         public bool isInitialized(int adType)
         {
             return getAppodealClass().CallStatic<bool>("isInitialized", nativeAdTypesForType(adType));

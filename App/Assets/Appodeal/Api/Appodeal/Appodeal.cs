@@ -649,6 +649,11 @@ namespace AppodealAds.Unity.Api
         {
             getInstance().destroy(adTypes);
         }
+        
+        public static DateTime getBuildDate()
+        {
+            return getInstance().getBuildDate();
+        }
 
         /// <summary>
         /// Add extra data to Appodeal.
