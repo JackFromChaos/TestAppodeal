@@ -195,12 +195,7 @@ namespace AppodealAds.Unity.iOS
 
         [DllImport("__Internal")]
         internal static extern void AppodealValidateInAppPurchase(
-            string productIdentifier,
-            string price,
-            string currency,
-            string transactionId,
-            string additionalParams,
-            int type,
+            InAppPurchaseParams purchaseParams,
             InAppPurchaseValidationSucceededCallback success,
             InAppPurchaseValidationFailedCallback failure);
 
