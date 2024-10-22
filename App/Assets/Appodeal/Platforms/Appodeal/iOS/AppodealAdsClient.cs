@@ -668,6 +668,10 @@ namespace AppodealAds.Unity.iOS
         {
             return AppodealObjCBridge.AppodealGetSegmentId();
         }
+        public DateTime getBuildDate()
+        {
+            return DateTime.MinValue;
+        }
 
         public bool canShow(int adTypes, string placement)
         {
