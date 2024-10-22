@@ -6024,6 +6024,7 @@ MonoBehaviour:
   btnShowRewardedVideo: {fileID: 580416344}
   consentManagerPanel: {fileID: 1634643287}
   appodealPanel: {fileID: 1851359258}
+  buildInfo: {fileID: 870849708}
 --- !u!114 &1572186909
 MonoBehaviour:
   m_ObjectHideFlags: 0
